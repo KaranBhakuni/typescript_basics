@@ -1,6 +1,11 @@
+ts helps you to catch type errors at compile time
+
 to tsc globally: npm intstall -g typescript
 
 
 in a project: npm init -y // to start a node project
               npm  intall typescript // to intall tsc
               npx tsc --init // makes ts config file 
+              npx tsc -b // tsc build: converting ts code to js code that will give a .js and tsconfig.tsbuildinfo file
+              now you can run the index.js file : node index.js 
+              this freshly created index.js file will not contain any ts code
