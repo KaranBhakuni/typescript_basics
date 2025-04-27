@@ -1,0 +1,6 @@
+to tsc globally: npm intstall -g typescript
+
+
+in a project: npm init -y // to start a node project
+              npm  intall typescript // to intall tsc
+              npx tsc --init // makes ts config file 
