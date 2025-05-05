@@ -13,7 +13,7 @@ function greet(name: string){
 greet("karan");
 
 function greet2(name: any){   // any type can store all types
-    console.log(" hi "+ name);
+    console.log(" hi "+ name); // avoid using any 
 }
 greet2("karan");
 greet2(1);
@@ -49,3 +49,42 @@ function sum3(a: number,b:number): number {
 
 let ans3=sum(3,5);
 console.log(ans3 )
+
+
+// create a fn that takes another fn as input, and runs it after 1 second
+function delayedCall(fn:()=> void){
+
+    setTimeout(fn, 1000);
+}
+
+// delayedCall(function(){
+//     console.log(
+//         "hello"
+//     )
+// })
+
+function log() {
+    console.log("hi there");
+}
+
+delayedCall(log)
+
+//function to greet a object / object as arguemnt
+function greet3(user:{
+    name: string,
+    age: number
+}){
+    console.log("hello "+user.name)
+}
+
+greet3({
+    name: "karan",
+    age: 22
+})
+
+let user2 = {
+    name: "john",
+    age: 50,
+
+}
+greet3(user2)
